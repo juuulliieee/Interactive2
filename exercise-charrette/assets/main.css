@@ -1,0 +1,807 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 180px;
+	width: 180px;
+	background: yellow;
+	color: white;
+
+	margin: 10px;
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	/*transition: all 500ms ease; */
+}
+
+/*background color*/
+#button-1{
+	background: #FEDD00;
+	transition: all 1s;
+
+}
+
+#button-1:hover {
+	transform: rotate(90deg) scale(3);
+	opacity: .3;
+}
+/*
+#button-1:active {
+	animation: pulse 1s infinite;	
+}*/
+
+
+#button-2{
+	background: #FE5000;
+	transition: all 1s;
+}
+
+
+#button-2:hover {
+	transform: rotate(90deg) scale(0.2);
+	opacity: .3;
+}
+
+#button-2::after {
+	
+}
+
+
+#button-2:hover::after {
+	color: red;
+}
+
+
+#button-3{
+	background: #CE0058;
+}
+
+#button-3:hover {
+	animation: pulse 1s infinite;	
+}
+@keyframes pulse{
+	25%{
+		transform: scale(1.1)
+	}
+	75%{
+		transform: scale(0.9)
+	}
+} 
+
+
+#button-4{
+	background: #BB29BB;
+	transition: all 6s;
+}
+#button-4:hover {
+	transform: rotateX(780deg);
+	background: pink;
+}
+
+#button-4:active { 
+	background: yellow;
+	transform: rotateZ(90deg);
+	mix-blend-mode: screen;
+
+ }
+
+#button-5{
+	background: #E10098;
+	transition: all 3s;
+}
+
+#button-5:hover {
+	transform: rotate(90deg) scale(1.5);
+	opacity: .3;
+}
+
+#button-5:active {
+	background: green;
+	opacity: 1;
+}
+
+
+#button-6{
+	background: #440099;
+	transition: all 3s;
+}
+
+#button-6:hover {
+	background: yellow;
+	transform: scale3d(5,2,1);
+	opacity: .3;
+}
+
+#button-6:active {
+	background: pink;
+}
+
+
+#button-7{
+	background: #001489;
+	transition: all 3s;
+}
+
+#button-7:hover {
+	transform: rotate(90deg) scale(2);
+	opacity: .5;
+}
+
+#button-7:active {
+	background: blue;
+	opacity: 1;
+}
+
+#button-8{
+	background: #0085CA;
+	transition: all 3s;
+}
+
+#button-8:hover {
+	transform: rotate(130deg) scale(2.5);
+	opacity: .3;
+}
+
+
+#button-9{
+	background: #00AB84;
+	transition: all 3s;
+}
+
+#button-9:hover {
+	transform: translate(0px,-50px);
+	opacity: .3;
+}
+
+#button-10{
+	background: #2D2926;
+	transition: all 3s;
+}
+
+#button-10:hover {
+	transform: translateX(100px);
+	opacity: .3;
+}
+
+
+#button-11{
+	background: #F2F0A1;
+	transition: all 1s;
+}
+.item11{
+	height: 180px;
+	width: 180px;
+	background: yellow;
+	transform: scale(0.2, 1);
+	transition: all 1s;
+}
+#button-11:hover .item11{
+	transform: scale(1, 1);
+}
+
+#button-12{
+	background: #FCAEBB;
+	transition: all 3s;
+}
+
+#button-12:hover {
+	transform: translateY(200px);
+	opacity: .4;
+}
+
+#button-13{
+	background: #F1B2DC;
+	transition: all 2s;
+}
+
+#button-13:hover {
+	transform: translateX(120px);
+	opacity: .7;
+}
+
+
+#button-14{
+	background: #BF9BDE;
+	transition: all 1s;
+}
+
+#button-14:hover {
+	transform: translateX(120px);
+	transform: skewX(180deg);
+	opacity: .6;
+}
+
+#button-15{
+	background: #74D1EA;
+	transition: all 1.5s;
+}
+
+#button-15:hover {
+	transform: scaleY(3);
+	opacity: .6;
+}
+
+
+#button-16{
+	background: #9DE7D7;
+	transition: all 2s;
+}
+
+#button-16:hover {
+	transform: scaleX(3);
+}
+
+
+#button-17{
+	background: #9E978E;
+	transition: all 1s;
+}
+
+#button-17:hover {
+	transform: translate3d(100px,50px,20px);
+	opacity: .3;
+}
+
+
+#button-18{
+	background: #009ACE;
+	transition: all 1s;
+}
+
+.item18{
+	height: 180px;
+	width: 180px;
+	background: blue;
+	transform: scale(1, 0.3);
+	transition: all 1s;
+}
+#button-18:hover .item18{
+	transform: scale(1, 1);
+
+}
+
+#button-19{
+	background: #44D62C;
+	transition: all 1s;
+}
+
+#button-19:hover{
+	animation: pulse 1s infinite;
+	transform: rotate(130deg) scale(2.5);
+	opacity: .3;
+}
+
+#button-20{
+	background: #FFE900;
+	transition: all 1s;
+
+}
+
+#button-20:hover {
+	transform: translate3d(10px,500px,200px);
+	opacity: .5;
+}
+
+#button-21{
+	background: #FFAA4D;
+	transition: all .5s;
+}
+
+#button-21:hover {
+	transform: translate3d(-200px,0px,-200px);
+	opacity: .5;
+}
+
+
+#button-22{
+	background: #FF7276;
+	transition: all .5s;
+}
+
+#button-22:hover {
+	transform: rotateZ(270deg);
+	background: blue;
+}
+
+#button-23{
+	background: #FF3EB5;
+	transition: all .5s;
+}
+
+#button-23:hover {
+	transform: rotateY(700deg);
+	background: #CE0056;
+}
+
+#button-24{
+	background: #EA27C2;
+}
+
+.pulse{
+	animation: pulse 1s infinite;
+}
+
+
+#button-25{
+	background: #F2F0A1;
+	transition: all 1s;
+}
+.item25{
+	height: 180px;
+	width: 180px;
+	background: #C1A7E2;
+	transition: all 1s;
+	transform-origin: left;
+}
+#button-25:hover .item25{
+	
+	transform: rotate(720deg);
+}
+
+#button-26{
+	background: #84754E;
+}
+
+.item26{
+	height: 180px;
+	width: 180px;
+	background: #FFB3AB;
+	transition: all 1s;
+	transform: scale(0, 1);
+	transform-origin: left;
+}
+#button-26:hover .item26{
+	transform: scale(1, 1);
+}
+
+#button-27{
+	background: #8A8D8F;
+}
+
+#button-27:hover{
+	animation: pulse 1s infinite;
+	transform: rotate(720deg);
+	opacity: .3;
+}
+
+#button-28{
+	background: #FFD900;
+}
+
+#button-28:hover{
+	transform: scale(1, 0.3);
+	opacity: .3;
+}
+
+#button-29{
+	background: #FF5E00;
+	transition: all 1s;
+}
+
+#button-29:hover {
+	background: #A3C7D2;
+	transform: scale3d(3,3,1);
+	opacity: .3;
+}
+
+#button-30{
+	background: #F93822;
+}
+.random1a{
+	animation: random1a 3s infinite;
+}
+@keyframes random1a{
+	
+	75%{
+		transform: rotate(90deg) translate(0px,10px);
+	}
+} 
+
+#button-31{
+	background: #CE0056;
+}
+
+.random2a{
+	animation: random2a 6s infinite;
+}
+@keyframes random2a{
+	
+	75%{
+		background: yellow;
+		transform: rotate(190deg) translate(0px,10px);
+	}
+} 
+
+#button-32{
+	background: #D62598;
+}
+
+.random3a{
+	animation: random3a 6s infinite;
+}
+@keyframes random3a{
+	
+	75%{
+		transform: translate3d(200px,0px,-200px);
+	}
+} 
+
+#button-33{
+	background: #4E008E;
+}
+
+.random4a{
+	animation: random4a 2s infinite;
+}
+@keyframes random4a{
+
+	25%{
+		transform: translate3d(-200px,0px,200px);
+	}
+	
+	75%{
+		transform: translate3d(200px,0px,-200px);
+
+	}
+} 
+
+#button-34{
+	background: #00239C;
+}
+
+.random5a{
+	animation: random5a 1s infinite;
+
+}
+@keyframes random5a{
+
+	25%{
+		transform: translate3d(-200px,0px,200px);
+	}
+	
+	75%{
+		transform: scale(2,2) rotate(90deg) translate3d(200px,0px,-200px);
+
+	}
+} 
+
+
+#button-35{
+	background: #0084CA;
+}
+.random6a{
+	animation: random6a 3s infinite;
+	
+}
+@keyframes random6a{
+	
+	75%{
+		filter: blur(10px);
+
+	}
+} 
+
+#button-36{
+	background: #00B08B;
+}
+
+.random7a{
+	animation: random7a 2s infinite;
+	
+}
+@keyframes random7a{
+	
+	75%{
+		filter: drop-shadow(10px 10px 10px red);
+	}
+} 
+
+
+#button-37{
+	background: #FFB3AB;
+}
+
+.random8a{
+	animation: random8a 2s infinite;
+	
+}
+@keyframes random8a{
+	
+	75%{
+		filter: grayscale(100);
+	}
+} 
+
+
+#button-38{
+	background: #EF4A81;
+}
+
+.random9a{
+	animation: random9a 2s infinite;
+	
+}
+@keyframes random9a{
+	
+	75%{
+		filter: hue-rotate(180deg);
+	}
+} 
+
+#button-39{
+	background: #B580D1;
+}
+
+.random10a{
+	animation: random10a 2s infinite;
+	
+}
+@keyframes random10a{
+	
+	75%{
+		filter: saturate(8);
+		border-radius: 50%;
+	}
+} 
+
+
+#button-40{
+	background: #8094DD;
+}
+
+.random11a{
+	animation: random11a 2s infinite;
+	
+}
+@keyframes random11a{
+	
+	75%{
+		filter: invert(.8);
+		border-radius: 50%;
+		transform: rotate(190deg) translate(0px,10px);
+	}
+} 
+#button-41{
+	background: #00B5E2;
+}
+
+.random12a{
+	animation: random12a 2s infinite;
+	
+}
+@keyframes random12a{
+	
+	75%{
+		filter: brightness(3);
+		border-radius: 50%;
+		transform: rotate(190deg) translate(10px,0px);
+	}
+} 
+
+#button-42{
+	background: #6BBBAE;
+}
+
+.random13a{
+	animation: random13a .5s infinite;
+	
+}
+@keyframes random13a{
+	
+	25%{ 
+		filter: invert(.8);
+
+	}
+
+	75%{
+		filter: contrast(4);
+
+	}
+} 
+
+#button-43{
+	background: #EFDF00;
+}
+
+.random14a{
+	animation: random14a 2s infinite;
+	
+}
+@keyframes random14a{
+
+	25%{ 
+		filter: contrast(2);
+		transform: scale(1.1)
+
+	}
+
+	75%{
+		filter: contrast(50);
+		transform: scale(0.9)
+
+	}
+} 
+
+
+#button-44{
+	background: #C1C6C8;
+}
+
+.random15a{
+	animation: random15a 3s infinite;
+	
+}
+@keyframes random15a{
+
+	25%{ 
+		filter: hue-rotate(240deg);
+		transform: scale(1.1)
+
+	}
+
+	75%{
+		filter: hue-rotate(50deg);
+		border-radius: 50%;
+		transform: scale(0.9)
+
+	}
+} 
+
+#button-45{
+	background: #FCD299;
+}
+
+
+.random16a{
+	animation: random16a 2s infinite;
+}
+@keyframes random16a{
+
+	25%{
+		filter: sepia(50%);
+		transform: translate3d(-200px,0px,200px);
+	}
+	
+	75%{
+		filter: sepia(100%);
+		transform: translate3d(200px,0px,-200px);
+
+	}
+} 
+
+#button-46{
+	background: #B7BF10;
+}
+
+.random17a{
+	animation: random17a 2s infinite;
+}
+@keyframes random17a{
+	
+	75%{
+		filter: contrast(5) saturate(2) sepia(.8);
+		
+	}
+} 
+
+#button-47{
+	background: #BBC592;
+}
+
+.random18a{
+	animation: random18a 2s infinite;
+}
+@keyframes random18a{
+
+	25%{
+		filter: blur(5px);
+	}
+	75%{
+		filter: contrast(5) saturate(2) sepia(.8);
+		
+	}
+} 
+
+#button-48{
+	background: #26D07C;
+}
+
+.random19a{
+	animation: random19a 2s infinite;
+	
+}
+@keyframes random19a{
+
+	75%{
+		filter:drop-shadow(15px 15px 15px purple);
+		border-radius: 50%;
+		transform: scale(0.9)
+
+	}
+} 
+
+#button-49{
+	background: #2AD2C9;
+}
+
+.random20a{
+	animation: random20a 1s infinite;
+	
+}
+@keyframes random20a{
+
+	25%{
+		border-radius: 0%;
+		transform: scale(1.2);
+	}
+
+	75%{
+		filter: hue-rotate(360deg);
+		border-radius: 50%;
+		transform: scale(0.9)
+
+	}
+} 
+
+#button-50{
+	background: #A77BCA;
+	transition: all 1s;
+}
+
+.random21a{
+	animation: random21a 1s forwards;
+	
+}
+@keyframes random21a{
+
+	75%{
+		background: white;
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
