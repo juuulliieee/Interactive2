@@ -1,0 +1,25 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* container */
+
+/* 
+this selector finds all 
+elements that begin with 
+the class .element 
+*/
+
+div[class^="element-"] {
+    width: 100px;
+    height: 100px;
+    background: #ffff00;
+    position: absolute;
+}
