@@ -416,15 +416,6 @@ $(document).ready(function(){
 			},0.0001);
 		}
 
-
-		// $('#color42').css({
-		// 	'transform': 'scale('+ xPos/100 + ')'
-		// 	+ 'translateX(' + xPos/10 + 'px)'
-		// 	+ 'translatey(' + yPos/10 + 'px)'
-		// 	,
-		// 	'opacity': 0 + yPos/1000,
-			
-		// });
 		
 
 
