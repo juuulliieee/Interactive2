@@ -1,11 +1,34 @@
 $(document).ready(function(){
 
-	// as long as n is less then 8, add a new div to the page
-	for(var n = 1; n < 8; n++){
+	// random number function
+	function randomNum(m,n) {
+		
+		//minumum number
+		m = parseInt(m);
+		
+		//maximum number
+		n = parseInt(n);
 
-		// add a div to the page, and give it a unique class
-		$('body').append('<div class="element-'+n+'">'+n+'</div>');
+		// get a random number
+		return Math.floor(Math.random() * (n - m + 1) ) + m;
 
 	}
 
+	setInterval(swapImages,2000);
+
+    function swapImages(){
+
+		$('.letterbox .lineL1').each(function(){
+				var current = parseInt($(this).css('transform').split(',')[5]);
+				console.log(current);
+				var rotate = randomNum(1, 20);
+				$(this).css('transform', 'rotate('+rotate+'deg)');
+		});
+
+	}
+
+
+
 });
+
+
