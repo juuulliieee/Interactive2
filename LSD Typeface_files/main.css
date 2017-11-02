@@ -7,89 +7,187 @@
 
 body {
 	font-family: helvetica, arial, sans-serif;
-    background: black;
 }
 
-/*#container {width: 1200px; height: 500px; position: relative;}
-*/
+#container {width: 1200px; height: 500px; position: relative;}
+
 .letterbox{
 	/*background-color: green;*/
 	position: relative;
 
 	width: 120px;
     height: 150px;
-    /*border: 1px solid red;*/
+/*    border: 1px solid red;*/
 
     z-index: 1;
 
-    transform: scale(2);
-    margin-top: 150px;
-    margin-left: 120px;
-    display: inline-block;
+    float: left;
+
+    transform: scale(1);
 
    /* display: none;*/
 }
-#container{
-    margin: 0 auto;
-    width: 1100px;
-    transform: translateY(-20vh);
-}
 
-/*.letterbox div{
+.letterbox div{
 	position: absolute;
 	transition: all 300ms ease;
 }
 .letterbox div:hover{
 	transform: rotate(45deg);
-}*/
+}
 
 /*.containerJ{
 	display: block;
 }*/
-.letterbox.margin-left{
-    margin-left: 250px;
 
+.containerA{
+	
+	transition: all 2s;
+}
+.containerA:hover{
+	background-color: blue;
 }
 
-
-/*.letterbox div{
-    transition: all 300ms ease;
-    animation:0.5s example infinite;
-    animation-direction: alternate;
-   
+.lineA{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
+.lineA1{
+	top: 78px;
+    left: -21px;
+    transform: rotate(-70deg);
 }
 
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}*/
+.lineA2{
+	top: 78px;
+    left: 27px;
+    transform: rotate(-110deg);
+}
 
+.lineA3{
+	top: 91px;
+    left: 40px;
+    width: 36px;
+	
+}
 
+.lineB{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
 
+.lineB1{
+	top: 80px;
+    left: -36px;
+    transform: rotate(-90deg);
+}
+
+.lineB2{
+	top: 56px;
+    left: 56px;
+    width: 36px;
+    transform: rotate(-90deg);
+}
+
+.lineB3{
+	top: 107px;
+    left: 88px;
+    width: 36px;
+    transform: rotate(-90deg);
+}
+
+.lineB4{
+	width: 37px;
+    top: 30px;
+    left: 28px;
+}
+
+.lineB5{
+	width: 73px;
+    top: 83px;
+    left: 28px;
+}
+
+.lineB6{
+	width: 73px;
+    top: 130px;
+    left: 28px;
+}
+
+.lineC{
+	position: absolute;
+	width: 36px;
+	height: 9px;
+	background-color: red;
+}
+
+.lineC1{
+	top: 79px;
+    left: 1px;
+    transform: rotate(-90deg);
+}
+
+.lineC2{
+	top: 44px;
+    left: 87px;
+    transform: rotate(-135deg);
+}
+
+.lineC3{
+	top: 114px;
+    left: 87px;
+    transform: rotate(-45deg);
+}
+
+.lineC4{
+    top: 30px;
+    left: 51px;
+}
+
+.lineC5{
+   top: 43px;
+    left: 16px;
+    transform: rotate(-45deg);
+}
+
+.lineC6{
+    top: 115px;
+    left: 16px;
+    transform: rotate(-135deg);
+}
+
+.lineC7{
+    top: 130px;
+    left: 51px;
+}
 
 .lineD{
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineD1{
 	top: 80px;
-    left: 102px;
+    left: -18px;
     transform: rotate(-90deg);
 }
 
 .lineD2{
 	top: 44px;
-    left: 205px;
+    left: 82px;
     width: 36px;
     transform: rotate(-134deg);
 }
 
 .lineD3{
 	top: 115px;
-    left: 205px;
+    left: 81px;
     width: 36px;
     transform: rotate(-45deg);
 }
@@ -97,60 +195,60 @@ body {
 .lineD4{
 	width: 36px;
     top: 30px;
-    left: 168px;
+    left: 46px;
 }
 
 .lineD5{
 	width: 36px;
     top: 79px;
-    left: 221px;
+    left: 97px;
     transform: rotate(-90deg);
 }
 
 .lineD6{
 	width: 36px;
     top: 130px;
-    left: 168px;
+    left: 47px;
 }
 
 .lineE{
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineE1{
-	top: 77px;
-    left: -30px;
+	top: 80px;
+    left: -20px;
     transform: rotate(-90deg);
 }
 
 .lineE2{
-	top: 77px;
-    left: 34px;
+	top: 79px;
+    left: 44px;
     width: 73px;
   
 }
 
 .lineE3{
-	top: 127px;
-    left: 34px;
+	top: 129px;
+    left: 44px;
     width: 73px;
     
 }
 
 .lineE4{
 	width: 73px;
-    top: 27px;
-    left: 34px;
+    top: 30px;
+    left: 44px;
 }
 
 .lineF{
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineF1{
@@ -177,7 +275,7 @@ body {
 	position: absolute;
 	width: 36px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineG1{
@@ -231,7 +329,7 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineH1{
@@ -258,7 +356,7 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineI1{
@@ -271,7 +369,7 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineJ1{
@@ -325,18 +423,18 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineL1{
-	top: 80px;
-    left: -20px;
+	top: 104px;
+    left: -3px;
     transform: rotate(-90deg);
 }
 
 .lineL2{
-	top: 131px;
-    left: 45px;
+	top: 154px;
+    left: 62px;
     width: 73px;
   
 }
@@ -457,32 +555,32 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineP1{
-	top: 77px;
-    left: -30px;
+	top: 104px;
+    left: 190px;
     transform: rotate(-90deg);
 }
 
 .lineP2{
-	top: 49px;
-    left: 94px;
+	top: 76px;
+    left: 314px;
     width: 36px;
     transform: rotate(-90deg);
 }
 
 .lineP3{
-	top: 71px;
-    left: 35px;
+	top: 99px;
+    left: 255px;
    	width: 73px;
 }
 
 .lineP4{
 	width: 73px;
-    top: 27px;
-    left: 35px;
+    top: 54px;
+    left: 255px;
 }
 
 .lineQ{
@@ -587,25 +685,25 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineS1{
-	top: 81px;
-    left: -112px;
+	top: 279px;
+    left: -832px;
     transform: rotate(-136deg);
 }
 
 .lineS2{
-	top: 31px;
-    left: -93px;
+	top: 229px;
+    left: -814px;
     width: 73px;
   
 }
 
 .lineS3{
-	top: 130px;
-    left: -93px;
+	top: 329px;
+    left: -815px;
     width: 73px;
     
 }
@@ -614,51 +712,199 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineT1{
-	top: 77px;
-    left: 5px;
+	top: 279px;
+    left: -849px;
     transform: rotate(-90deg);
 }
 
 .lineT2{
-	top: 27px;
-    left: 11px;
+	top: 229px;
+    left: -839px;
     width: 36px;
    
 }
 
 .lineT3{
-	top: 27px;
-    left: 74px;
+	top: 229px;
+    left: -784px;
     width: 36px;
  
 }
 
+.lineU{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
 
+.lineU1{
+	top: 129px;
+    left: 297px;
+    transform: rotate(-90deg);
+}
+
+.lineU2{
+	top: 179px;
+    left: 361px;
+    width: 73px;
+  
+}
+
+.lineU3{
+	top: 129px;
+    left: 391px;
+    transform: rotate(-90deg);
+}
+
+.lineV{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
+
+.lineV1{
+	top: 129px;
+    left: 325px;
+    transform: rotate(-110deg);
+}
+
+.lineV2{
+	top: 128px;
+    left: 371px;
+    transform: rotate(-70deg);
+}
+
+.lineW{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
+
+.lineW1{
+	top: 129px;
+    left: 308px;
+    transform: rotate(-110deg);
+}
+
+.lineW2{
+	top: 128px;
+    left: 421px;
+    transform: rotate(-70deg);
+}
+
+.lineW3{
+	top: 145px;
+    left: 400px;
+    width: 73px;
+    transform: rotate(-110deg);
+}
+
+.lineW4{
+	top: 145px;
+    left: 367px;
+    width: 73px;
+    transform: rotate(-70deg);
+}
+
+.lineX{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
+
+.lineX1{
+	top: 100px;
+    left: 393px;
+    width: 73px;
+    transform: rotate(-135deg);
+}
+
+.lineX2{
+	top: 158px;
+    left: 393px;
+    width: 73px;
+    transform: rotate(-45deg);
+}
+
+.lineX3{
+	top: 157px;
+    left: 450px;
+    width: 73px;
+    transform: rotate(-136deg);
+}
+
+.lineX4{
+	top: 99px;
+    left: 451px;
+    width: 73px;
+    transform: rotate(-45deg);
+}
 
 .lineY{
 	position: absolute;
 	width: 110px;
 	height: 9px;
-	background-color: white;
+	background-color: red;
 }
 
 .lineY1{
-	top: 51px;
-    left: -6px;
+	top: 102px;
+    left: 409px;
     width: 73px;
     transform: rotate(-135deg);
 }
 
 .lineY2{
-	top: 79px;
-    left: -2px;
+	top: 129px;
+    left: 411px;
     width: 146px;
     transform: rotate(-45deg);
 }
+
+.lineZ{
+	position: absolute;
+	width: 110px;
+	height: 9px;
+	background-color: red;
+}
+
+.lineZ1{
+	top: 129px;
+    left: 411px;
+    transform: rotate(-43deg);
+}
+
+.lineZ2{
+	top: 179px;
+    left: 430px;
+    width: 73px;
+  
+}
+
+.lineZ3{
+	top: 79px;
+    left: 430px;
+    width: 73px;
+  
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
