@@ -1,0 +1,165 @@
+body {
+    background: #cccccc;
+}
+
+
+.canvas {
+    width: 900px;
+    height: 556px;
+    margin: 100px auto;
+    background: #DFDDD9;
+    position: relative;
+}
+
+.canvas:hover {
+    background: #FAEBD7;
+}
+
+#table {
+    border-bottom: 210px solid yellow;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    height: 0;
+    width: 570px;
+    position: absolute;
+    top: 210px;
+    left: 50px;
+}
+
+
+
+#pom {
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 30px;
+    position: absolute;
+    top: 280px;
+    left: 330px;
+    z-index: 1;
+}
+
+#pom2{
+    position: absolute;
+    background: red;
+    width: 30px;
+    height: 30px;
+    top: 258px;
+    left: 344px; 
+     -webkit-clip-path: polygon(50% 72%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 72%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+#banana{
+    position: absolute;
+    background: #FFD700;
+    width: 100px;
+    height: 100px;
+    top: 258px;
+    left: 390px; 
+    -webkit-clip-path: polygon(35% 31%, 100% 0%, 68% 64%, 0% 100%);
+    clip-path: polygon(35% 31%, 100% 0%, 68% 64%, 0% 100%);
+    border-radius: 50px;
+    
+}
+#black{
+    position: absolute;
+    background: black;
+    width: 20px;
+    height: 20px;
+    top: 335px;
+    left: 395px;
+    border-radius: 20%;
+    -webkit-clip-path: inset(5% 20% 15% 10%);
+    clip-path: inset(5% 20% 15% 10%);
+
+}
+/*#pom::before {
+    content: '';
+    height: 20px;
+    width: 11px;
+    background: brown;
+    display: block;
+    transform: rotate(-50deg);
+    position: absolute;
+    top: 0px;
+    left: 3px;
+}*/
+
+#vase{
+    position: absolute;
+    border-bottom: 160px solid #FFA500;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 26px;
+    margin-top: 168px;
+    margin-left: 479px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+#star{
+    position: absolute;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 150px;
+    height: 150px;
+    background: #FFD700;
+    margin-top: 90px;
+    margin-left: 469px;
+    z-index: 2;
+  
+}
+
+#circle{
+    width: 50px;
+    height: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    background: #8B4513;
+    margin-top: 142px;
+    margin-left: 519px;
+    z-index: 3;
+}
+
+#shadow2 {
+    width: 60px;
+    height: 20px;
+    background: black;
+    border-radius: 30px;
+    position: absolute;
+     margin-top: 307px;
+    margin-left: 509px;
+    z-index: 0;
+    
+    filter: blur(20px);
+    
+    animation: move 30000ms infinite;
+}
+
+@keyframes move {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(5); }
+}
+#shadow {
+    width: 60px;
+    height: 20px;
+    background: black;
+    border-radius: 30px;
+    position: absolute;
+    top: 320px;
+    left: 330px;
+    
+    z-index: 0;
+    
+    filter: blur(20px);
+    
+    animation: move 30000ms infinite;
+}
+
+@keyframes move {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(5); }
+}
