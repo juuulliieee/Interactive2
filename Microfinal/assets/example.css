@@ -1,0 +1,582 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  /*font-family: Arial, sans-serif;*/
+  background: black;
+}
+
+@font-face {
+    font-family: ScalaSans-Caps;
+    src: url(assets/FF ScalaSans-Caps.FFIL);
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+  overflow-x: hidden;
+}
+
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 4600px;
+  top: 0px;
+}
+
+.front
+{
+  z-index: 2000;
+  width: 6400px;
+  top: 0px;
+}
+
+#img-1 {
+  position: relative; 
+
+    float: left;
+    margin-top: 150px;
+    margin-left: 1000px;
+
+    /*display: inline-block;*/
+
+}
+
+h1{
+  margin-left: 50px;
+  font-size: 70px;
+  font-family:'ScalaSans-Caps'; 
+  color:white;
+}
+
+
+#line1{
+  width: 0px;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 4400px;
+
+  background-color: transparent;
+  margin-top: 0px;
+
+/*  box-shadow: 
+  0 0 0px 300px #FF1177, 
+  0 0 20px 300px #FF1177, 
+  0 0 30px 300px #FF1177, 
+  0 0 40px 300px #FF1177, 
+  0 0 70px 300px #FF1177, 
+  0 0 80px 300px #FF1177, 
+  0 0 300px 300px #FF1177, 
+  0 0 150px 300px #FF1177;
+*/
+  box-shadow: 
+    0 0 20px 100px rgba(255,0,0,.25), 
+/*    0 0 40px 300px rgba(255,0,0,.25), 
+    0 0 60px 300px rgba(255,0,0,.5), 
+    0 0 80px 300px rgba(255,0,0,.5), 
+    0 0 140px 300px rgba(255,0,0,.75), 
+    0 0 160px 300px rgba(255,0,0,.75), 
+    0 0 320px 300px rgba(255,0,0,1), */
+    0 0 140px 100px rgba(255,0,0,1);
+  ;
+
+  -webkit-animation: neon1 4s ease-in-out infinite alternate;
+  -moz-animation: neon1 4s ease-in-out infinite alternate;
+  animation: neon1 4s ease-in-out infinite alternate;
+}
+
+#line2{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 4700px;
+
+  opacity: .75;
+
+  transform: rotate(20deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(178,26,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(178,26,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line3{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 4850px;
+
+  opacity: .75;
+
+  transform: rotate(-380deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,255,0,.25), 
+   /* 0 0 20px 300px rgba(255,255,0,.25), 
+    0 0 30px 300px rgba(255,255,0,.5), 
+    0 0 40px 300px rgba(255,255,0,.5), 
+    0 0 70px 300px rgba(255,255,0,.75), 
+    0 0 80px 300px rgba(255,255,0,.75), 
+    0 0 100px 300px rgba(255,255,0,1), */
+    0 0 150px 100px rgba(255,255,0,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+}
+
+#line4{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 5400px;
+
+  opacity: .75;
+
+  transform: rotate(13deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(0,255,0,.25), 
+   /* 0 0 20px 300px rgba(255,255,0,.25), 
+    0 0 30px 300px rgba(255,255,0,.5), 
+    0 0 40px 300px rgba(255,255,0,.5), 
+    0 0 70px 300px rgba(255,255,0,.75), 
+    0 0 80px 300px rgba(255,255,0,.75), 
+    0 0 100px 300px rgba(255,255,0,1), */
+    0 0 150px 100px rgba(0,255,0,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+}
+
+#line5{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 2300px;
+
+  opacity: .75;
+
+  transform: rotate(-10deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,255,0,.25), 
+   /* 0 0 20px 300px rgba(255,255,0,.25), 
+    0 0 30px 300px rgba(255,255,0,.5), 
+    0 0 40px 300px rgba(255,255,0,.5), 
+    0 0 70px 300px rgba(255,255,0,.75), 
+    0 0 80px 300px rgba(255,255,0,.75), 
+    0 0 100px 300px rgba(255,255,0,1), */
+    0 0 150px 100px rgba(255,255,0,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+}
+
+#line6{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 2600px;
+
+  opacity: .75;
+
+  transform: rotate(20deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,0,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(255,0,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line8{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 800px;
+
+  opacity: .75;
+
+  transform: rotate(-22deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,255,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(255,255,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line7{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 1200px;
+
+  opacity: .75;
+
+  transform: rotate(20deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,255,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(255,255,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line9{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 600px;
+
+  opacity: .75;
+
+  transform: rotate(9deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,255,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(255,255,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line10{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 800px;
+
+  opacity: .75;
+
+  transform: rotate(5deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,255,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(255,255,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line10{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 2800px;
+
+  opacity: .75;
+
+  transform: rotate(5deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(128,128,255,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(128,128,255,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line11{
+  width: 0px;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0px;
+  left: 3000px;
+
+  opacity: .75;
+
+  transform: rotate(-19deg);
+  transform-origin: top left;
+
+  background-color: transparent;
+/*  box-shadow: 
+  0 0 0px 300px #FFDD1B, 
+  0 0 20px 300px #FFDD1B, 
+  0 0 30px 300px #FFDD1B, 
+  0 0 40px 300px #FFDD1B, 
+  0 0 70px 300px #FFDD1B, 
+  0 0 80px 300px #FFDD1B, 
+  0 0 300px 300px #FFDD1B, 
+  0 0 150px 300px #FFDD1B;*/
+
+  box-shadow: 
+    0 0 10px 100px rgba(255,0,102,.25), 
+/*    0 0 20px 300px rgba(255,0,255,.25), 
+    0 0 30px 300px rgba(255,0,255,.5), 
+    0 0 40px 300px rgba(255,0,255,.5), 
+    0 0 70px 300px rgba(255,0,255,.75), 
+    0 0 80px 300px rgba(255,0,255,.75), 
+    0 0 100px 300px rgba(255,0,255,1),*/ 
+    0 0 150px 100px rgba(255,0,102,1)
+  ; 
+
+
+  -webkit-animation: neon2 4s ease-in-out infinite alternate;
+  -moz-animation: neon2 4s ease-in-out infinite alternate;
+  animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

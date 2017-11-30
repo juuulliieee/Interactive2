@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Glow</title>
+    <link rel="stylesheet" href="assets/example.css" />
+</head>
+<body>   
+
+    <div class="horizon scroll">
+        <h1>dan flavin</h1>
+    </div>
+
+
+    <div class="middle scroll">
+        <img id="img-1" src="assets/img/3.jpg" style= "width:300px;height:auto">
+        <img id="img-1" src="assets/img/2.jpg" style="width: 300px">
+        <img id="img-1" src="assets/img/1.jpg" style="width: 500px">
+    </div>
+    <div class="front scroll">
+        <div id='line1'></div>
+        <div id='line2'></div>
+        <div id='line3'></div>
+        <div id='line4'></div>
+        <div id='line5'></div>
+        <div id='line6'></div>
+        <div id='line7'></div>
+        <div id='line8'></div>
+        <div id='line9'></div>
+        <div id='line10'></div>
+        <div id='line11'></div>        
+
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="assets/jquery.jInvertScroll.js"></script>
+
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6400,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	/*filter: blur(300px);*/
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	margin: 0px;
+	background-color: black;
+	/*opacity: 0.2;*/
+}
+
+/*div {
+mix-blend-mode: screen;	
+}*/
+
+#photos{
+	position: relative;
+	width: 5400px;
+}
+
+.photo0{
+	position: relative; 
+
+    float: left;
+    margin-top: 150px;
+    margin-left: 1000px;
+
+    /*display: inline-block;*/
+
+}
+
+#lights{
+	padding: 10px;
+	width: 4000px;
+	height: 100%;
+	
+	position: absolute;
+}
+
+/*#lights {
+	transform: scale(4);
+	transform-origin: top left;
+}
+*/
+#line1{
+	width: 0px;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+
+	background-color: transparent;
+	margin-top: 0px;
+
+/*	box-shadow: 
+	0 0 0px 300px #FF1177, 
+	0 0 20px 300px #FF1177, 
+	0 0 30px 300px #FF1177, 
+	0 0 40px 300px #FF1177, 
+	0 0 70px 300px #FF1177, 
+	0 0 80px 300px #FF1177, 
+	0 0 300px 300px #FF1177, 
+	0 0 150px 300px #FF1177;
+*/
+	box-shadow: 
+		0 0 20px 300px rgba(255,0,0,.25), 
+		0 0 40px 300px rgba(255,0,0,.25), 
+		0 0 60px 300px rgba(255,0,0,.5), 
+		0 0 80px 300px rgba(255,0,0,.5), 
+		0 0 140px 300px rgba(255,0,0,.75), 
+		0 0 160px 300px rgba(255,0,0,.75), 
+		0 0 320px 300px rgba(255,0,0,1), 
+		0 0 640px 300px rgba(255,0,0,1);
+	;
+
+	-webkit-animation: neon1 4s ease-in-out infinite alternate;
+	-moz-animation: neon1 4s ease-in-out infinite alternate;
+	animation: neon1 4s ease-in-out infinite alternate;
+}
+
+
+#line2{
+	width: 0px;
+	height: 100vh;
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	opacity: .75;
+
+	transform: rotate(20deg);
+	transform-origin: top left;
+
+	background-color: transparent;
+/*	box-shadow: 
+	0 0 0px 300px #FFDD1B, 
+	0 0 20px 300px #FFDD1B, 
+	0 0 30px 300px #FFDD1B, 
+	0 0 40px 300px #FFDD1B, 
+	0 0 70px 300px #FFDD1B, 
+	0 0 80px 300px #FFDD1B, 
+	0 0 300px 300px #FFDD1B, 
+	0 0 150px 300px #FFDD1B;*/
+
+	box-shadow: 
+		0 0 10px 300px rgba(255,0,255,.25), 
+		0 0 20px 300px rgba(255,0,255,.25), 
+		0 0 30px 300px rgba(255,0,255,.5), 
+		0 0 40px 300px rgba(255,0,255,.5), 
+		0 0 70px 300px rgba(255,0,255,.75), 
+		0 0 80px 300px rgba(255,0,255,.75), 
+		0 0 100px 300px rgba(255,0,255,1), 
+		0 0 150px 300px rgba(255,0,255,1)
+	;	
+
+
+	-webkit-animation: neon2 4s ease-in-out infinite alternate;
+	-moz-animation: neon2 4s ease-in-out infinite alternate;
+	animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+#line3{
+	width: 0px;
+	height: 100vh;
+	
+	position: absolute;
+	top: 0px;
+	left: 200px;
+
+	opacity: .75;
+
+	transform: rotate(-40deg);
+	transform-origin: top left;
+
+	background-color: transparent;
+/*	box-shadow: 
+	0 0 0px 300px #FFDD1B, 
+	0 0 20px 300px #FFDD1B, 
+	0 0 30px 300px #FFDD1B, 
+	0 0 40px 300px #FFDD1B, 
+	0 0 70px 300px #FFDD1B, 
+	0 0 80px 300px #FFDD1B, 
+	0 0 300px 300px #FFDD1B, 
+	0 0 150px 300px #FFDD1B;*/
+
+	box-shadow: 
+		0 0 10px 300px rgba(255,255,0,.25), 
+		0 0 20px 300px rgba(255,255,0,.25), 
+		0 0 30px 300px rgba(255,255,0,.5), 
+		0 0 40px 300px rgba(255,255,0,.5), 
+		0 0 70px 300px rgba(255,255,0,.75), 
+		0 0 80px 300px rgba(255,255,0,.75), 
+		0 0 100px 300px rgba(255,255,0,1), 
+		0 0 150px 300px rgba(255,255,0,1)
+	;	
+
+
+	-webkit-animation: neon2 4s ease-in-out infinite alternate;
+	-moz-animation: neon2 4s ease-in-out infinite alternate;
+	animation: neon2 4s ease-in-out infinite alternate;
+
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+/*
+
+@-webkit-keyframes neon1 {
+	from {
+		box-shadow: 
+		0 0 20px 300px rgba(255,0,0,.25), 
+		0 0 40px 300px rgba(255,0,0,.25), 
+		0 0 60px 300px rgba(255,0,0,.5), 
+		0 0 80px 300px rgba(255,0,0,.5), 
+		0 0 140px 300px rgba(255,0,0,.75), 
+		0 0 160px 300px rgba(255,0,0,.75), 
+		0 0 320px 300px rgba(255,0,0,1), 
+		0 0 640px 300px rgba(255,0,0,1);
+	}
+	to {
+		box-shadow: 
+		0 0 5px 300px rgba(255,0,0,.25), 
+		0 0 10px 300px rgba(255,0,0,.25), 
+		0 0 15px 300px rgba(255,0,0,.5), 
+		0 0 20px 300px rgba(255,0,0,.5), 
+		0 0 35px 300px rgba(255,0,0,.75), 
+		0 0 40px 300px rgba(255,0,0,.75), 
+		0 0 50px 300px rgba(255,0,0,1), 
+		0 0 75px 300px rgba(255,0,0,1);
+	}
+}
+
+@-webkit-keyframes neon2 {
+	from {
+		box-shadow: 
+		0 0 20px 300px rgba(255,0,255,.25), 
+		0 0 40px 300px rgba(255,0,255,.25), 
+		0 0 60px 300px rgba(255,0,255,.5), 
+		0 0 80px 300px rgba(255,0,255,.5), 
+		0 0 140px 300px rgba(255,0,255,.75), 
+		0 0 160px 300px rgba(255,0,255,.75), 
+		0 0 320px 300px rgba(255,0,255,1), 
+		0 0 640px 300px rgba(255,0,255,1);
+	}
+	to {
+		box-shadow: 
+		0 0 10px 300px rgba(255,0,255,.25), 
+		0 0 20px 300px rgba(255,0,255,.25), 
+		0 0 30px 300px rgba(255,0,255,.5), 
+		0 0 40px 300px rgba(255,0,255,.5), 
+		0 0 70px 300px rgba(255,0,255,.75), 
+		0 0 80px 300px rgba(255,0,255,.75), 
+		0 0 100px 300px rgba(255,0,255,1), 
+		0 0 150px 300px rgba(255,0,255,1);
+	}
+}
+*/
+
+
+
+
+
+
+

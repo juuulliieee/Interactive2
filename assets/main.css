@@ -1,0 +1,56 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  /*font-family: Arial, sans-serif;*/
+  background: white;
+}
+
+@font-face {
+    font-family: ScalaSans-Caps;
+    src: url(../scalasans-caps.otf);
+}
+
+@font-face {
+    font-family: ScalaSans-Regular;
+    src: url(../scalasans-regular.otf);
+}
+
+h1{
+  font-size: 30px;
+  font-family:'ScalaSans-Caps'; 
+  color:black;
+/*  letter-spacing: 3px;*/
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+h2{
+  font-size: 30px;
+  font-family:'ScalaSans-Caps'; 
+  color:black;
+/*  letter-spacing: 3px;*/
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+
+/*p{
+  font-size: 16px;
+  line-height: 25px;
+  font-family: 'ScalaSans-Regular';
+  color: white;
+  width: 500px;
+  margin-left: 60px;
+  margin-top: -20px;
+}*/
+
+/*#pg{
+	font-size: 60px;
+  font-family:'ScalaSans-Caps'; 
+  color:black;
+  letter-spacing: 3px;
+  margin-left: 100px;
+  margin-top: 100px;
+}*/
