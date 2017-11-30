@@ -14,9 +14,21 @@ body {
 	/*opacity: 0.2;*/
 }
 
+/*p {
+	font-size: 100px;
+	color: white;
+	position: absolute;
+	z-index: 100000000;
+}
+*/
 div {
 	mix-blend-mode: screen;	
 }
+
+.container2 div{
+	filter: blur(40px);
+}
+
 #backgroundC{
 	opacity: 0.4;
 	
