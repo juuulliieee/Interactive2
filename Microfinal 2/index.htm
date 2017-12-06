@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/example.css" />
 </head>
 <body>   
+<div class="contents">
 
     <div class="horizon scroll">
         <h1>
@@ -87,7 +88,17 @@
 
 
     </div>
-    
+</div>    
+<div class="outro">This website is the digital form of Dan Flavin's exhibition. <br>
+Featuring his major works of light installations in SFMOMA. 
+<img id="logo" src="assets/img/sfmoma.png">
+
+</div>
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="assets/jquery.jInvertScroll.js"></script>
 
@@ -98,9 +109,24 @@
             height: 7200,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
             onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
                 console.log(percent);
+
+                if(percent > .99) {
+                    $('.contents').hide(500);
+                    $('.outro').show(500);
+                } else {
+                    $('.contents').show(500);
+                    $('.outro').hide(500);                    
+                }
             }
         });
     }(jQuery));
+
+    // $('document').ready(function() {
+    //     $(document).scroll(function(){
+    //         if(document.documentElement.clientHeight + 
+    //         $(document).scrollTop() >= document.body.offsetHeight )$(document).scrollTop(0);
+    //     });
+    // });   
     </script>
 </body>
 </html>

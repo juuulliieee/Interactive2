@@ -60,6 +60,29 @@ body
   top: 0px;
 }
 
+.outro{
+  display: none; position: fixed; 
+  top: 50%; 
+  left: 30%; 
+  margin-left: -100px;
+  margin-top: -50px;
+  color: white;
+  font-family: 'ScalaSans-Regular';
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+
+}
+#logo{
+  position: fixed; 
+  top: 50%; 
+  left: 30%; 
+  margin-left: 710px;
+  margin-top: 270px;
+  width: 120px;
+  
+}
+
 #img-1 {
   position: relative; 
 
