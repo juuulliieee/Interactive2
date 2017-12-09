@@ -26,7 +26,7 @@ div {
 }
 
 .container2 div{
-	filter: blur(40px);
+	filter: blur(20px);
 }
 
 #backgroundC{
