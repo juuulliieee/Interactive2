@@ -1,0 +1,376 @@
+* {margin: 0px; padding 0px;}
+
+body {
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: screen;	
+	background-color: white;
+}
+
+@font-face {
+    font-family: Museo Slab;
+    src: url(../Museo_Slab_300.otf);
+}
+
+
+
+#tilte:hover + .about{
+	opacity: 1;
+}
+
+
+
+.aboutbox{
+
+position:absolute;
+
+transition: 100ms ease all;
+left: 50%;
+top: 50%;
+margin-left: 100px;
+margin-top: -20px;
+text-align: center;
+width: 360px;
+}
+
+#tilte{
+font-size: 12pt;
+position: absolute;
+font-family:'Museo Slab'; 
+top: 50%;
+left: 50%;
+margin-top: -340px;
+margin-left: -350px;
+}
+
+.about{
+	position:absolute;
+	font-family:'Museo Slab'; 
+	font-size: 10pt;
+	left: 50%;
+	top: 50%;
+	width: 360px;
+	height: 150px;
+	line-height: 22px;
+	margin-left: -460px;
+	margin-top: -310px;
+	opacity: 0;
+	transition: all 0.3s;
+
+
+}
+
+
+.ep{
+	text-align: center;
+}
+
+h1{
+  mix-blend-mode: multiply;
+  position: absolute;
+  text-align: center;
+
+}
+
+#cyan{
+	font-size: 140px;
+  font-family:'Museo Slab'; 
+  color: cyan;
+  letter-spacing: 3px;
+/*  margin-left: 50px;*/
+  width: 100vw;
+	top: 30vh;
+	
+}
+
+#desc #magenta{
+	font-size: 140px;
+  font-family:'Museo Slab'; 
+  color: magenta;
+  letter-spacing: 3px;
+  margin-left: 0px;
+  width: 100vw;
+	top: 30vh;
+	transition: 100ms ease all;
+	
+}
+
+#desc:hover #magenta{
+  margin-left: 10px;
+}
+
+#y{
+	font-size: 140px;
+  font-family:'Museo Slab'; 
+  color: yellow;
+  letter-spacing: 3px;
+  margin-left: 20px;
+  width: 100vw;
+	top: 30vh;
+	
+}
+
+
+p{
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Museo Slab';
+  color: black;
+  width: 100vw;
+ 	top: 50%;
+ 	margin-top: 60px;
+  position: absolute;
+  text-align: center;
+
+}
+
+/*@keyframes pulse{
+	25%{
+		transform: scale(1.1)
+	}
+
+	50%{
+		transform: scale(1.0)
+	}
+
+	75%{
+		transform: scale(0.9)
+	}
+} */
+
+
+
+
+
+
+
+#KeyDown{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: 300px;
+			margin-left: -285px;
+			color: white;
+			z-index: 100000; 
+		}
+
+.keyDown{
+		transition: all 0.3s;	
+		position: relative;
+		float: left;
+		width: 50px;
+		height: 50px;
+		font-family: 'Open Sans', sans-serif;
+		background: black;
+		border-radius: 10%;
+		filter: drop-shadow(3px 3px 1px gray);
+		margin-left: 20px;
+		}
+
+.keyC:hover {
+		background: red;
+		  transform: translateY(-20px);   
+		}
+		.keyD:hover {
+		background: orange;
+		  transform: translateY(-20px);   
+		}
+		.keyE:hover {
+		background: yellow;
+		  transform: translateY(-20px);   
+		}
+		.keyF:hover {
+		background: green;
+		  transform: translateY(-20px);   
+		}
+		.keyG:hover {
+		background: blue;
+		  transform: translateY(-20px);   
+		}
+		.keyA:hover {
+		background: navy;
+		  transform: translateY(-20px);   
+		}
+		.keyB:hover {
+		background: purple;
+		  transform: translateY(-20px);   
+		}
+		.key8:hover {
+		background: red;
+		  transform: translateY(-20px);   
+		}
+
+
+.keyname{
+		font-size: 12pt;
+		position: absolute;
+		left: 20px;
+		top: 17px;
+
+		}
+
+
+		@keyframes blinkprss {
+			0%{
+				opacity: 0.02;
+			}
+
+			50%{
+				opacity: 0.9;	
+			}
+			100%{
+				opacity: 0.02;	
+			}
+		}
+/**/
+
+
+
+
+
+#red {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: red;*/
+	background: linear-gradient(to bottom, rgba(255,50,50,1) 0%,rgba(255,137,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+	/*background-blend-mode: multiply;
+*/
+	opacity: 0;		
+}
+
+#red.show {
+	opacity: 1;
+}
+
+#orange {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: orange;	*/
+	background: linear-gradient(45deg, rgba(252,158,50,1) 0%,rgba(255,247,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+
+#orange.show {
+	opacity: 1;
+}
+
+#yellow {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: yellow;*/
+	background: linear-gradient(135deg, rgba(255,241,50,1) 0%,rgba(255,247,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+#yellow.show {
+	opacity: 1;
+}
+
+#green {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: yellow;*/
+	background: linear-gradient(-13deg, rgba(41,206,52,1) 0%,rgba(255,247,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+
+#green.show {
+	opacity: 1;
+}
+
+#blue {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: yellow;*/
+	background: linear-gradient(135deg, rgba(27,117,188,1) 0%,rgba(255,247,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+
+#blue.show {
+	opacity: 1;
+}
+
+#navy {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: yellow;*/
+	background: linear-gradient(135deg, rgba(47,60,239,1) 0%,rgba(255,247,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+
+#navy.show {
+	opacity: 1;
+}
+
+#purple {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: yellow;*/
+	background: linear-gradient(135deg, rgba(146,39,143,1) 0%,rgba(255,247,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+
+#purple.show {
+	opacity: 1;
+}
+
+#red8 {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: red;*/
+	background: linear-gradient(-13deg, rgba(255,50,50,1) 0%,rgba(255,137,137,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	-webkit-transition: all ease 500ms;	
+	mix-blend-mode: multiply;
+
+	opacity: 0;		
+}
+
+#red8.show {
+	opacity: 1;
+}
+
+
